@@ -6,17 +6,16 @@ import { setFlex, setBackground } from "../../styles";
 const Hero = styled.header`
   min-height: 100vh;
 
+  ${setFlex()};
+
   ${(props) =>
     setBackground({
       img: props.img,
-      color: "rgba(0,0,0,0.5)",
       position: "center",
       repeat: "no-repeat",
       size: "cover",
       attachment: "fixed",
     })};
-
-  ${setFlex()};
 `;
 
 Hero.propTypes = {
