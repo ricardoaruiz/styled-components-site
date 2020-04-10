@@ -1,12 +1,22 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
+import { setFlex, setBackground } from "../../styles";
+
 const Hero = styled.header`
   min-height: 100vh;
-  background: url(${(props) => props.img}) center/cover fixed no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  ${(props) =>
+    setBackground({
+      img: props.img,
+      color: "rgba(0,0,0,0.5)",
+      position: "center",
+      repeat: "no-repeat",
+      size: "cover",
+      attachment: "fixed",
+    })};
+
+  ${setFlex()};
 `;
 
 Hero.propTypes = {
