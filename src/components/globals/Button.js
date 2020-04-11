@@ -16,6 +16,7 @@ const Button = styled.button`
   text-transform: capitalize;
   outline: none;
   text-decoration: none;
+  cursor: pointer;
 
   background: ${setColor.primaryColor};
   color: ${setColor.mainWhite};

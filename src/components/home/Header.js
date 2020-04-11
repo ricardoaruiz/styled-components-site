@@ -17,6 +17,9 @@ const Header = () => {
         mollit nulla laborum quis."
       >
         <Button top={20}>view details</Button>
+        {/* <Button as="href" href="http://www.google.com" top={20}>
+          view google
+        </Button> */}
       </Banner>
     </Hero>
   );
