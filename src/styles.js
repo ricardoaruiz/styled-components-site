@@ -94,3 +94,20 @@ export const setBorder = ({
 } = {}) => {
   return `border: ${width} ${style} ${color}`;
 };
+
+export const setMargin = ({
+  top = "0",
+  right = "0",
+  bottom = "0",
+  left = "0",
+} = {}) => {
+  return `margin: ${top} ${right} ${bottom} ${left}`;
+};
+
+export const setTransition = ({
+  property = "all",
+  time = "0.3s",
+  timing = "ease-in-out",
+} = {}) => {
+  return `transition: ${property} ${time} ${timing}`;
+};

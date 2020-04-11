@@ -3,6 +3,7 @@ import Hero from "../globals/Hero";
 import Banner from "../globals/Banner";
 
 import homeImg from "../../images/homeBcg.jpeg";
+import Button from "../globals/Button";
 
 const Header = () => {
   return (
@@ -14,7 +15,9 @@ const Header = () => {
         excepteur cillum. Enim labore laboris eiusmod cillum laborum in aute est. 
         Tempor et officia ipsum excepteur sunt sunt nulla veniam fugiat aliqua 
         mollit nulla laborum quis."
-      ></Banner>
+      >
+        <Button top={20}>view details</Button>
+      </Banner>
     </Hero>
   );
 };
