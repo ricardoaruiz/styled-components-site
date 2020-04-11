@@ -11,7 +11,7 @@ import {
   setTransition,
 } from "../../styles";
 
-const Button = styled.button`
+const PrimaryButton = styled.button`
   display: inline-block;
   text-transform: capitalize;
   outline: none;
@@ -41,7 +41,11 @@ const Button = styled.button`
   }
 `;
 
-Button.propTypes = {
+const SmallButton = styled(PrimaryButton)`
+  padding: ${setRem(8)} ${setRem(12)};
+`;
+
+PrimaryButton.propTypes = {
   /* top in px */
   top: PropTypes.number,
   /* right in px */
@@ -52,11 +56,11 @@ Button.propTypes = {
   left: PropTypes.number,
 };
 
-Button.defaultProps = {
+PrimaryButton.defaultProps = {
   top: 0,
   right: 0,
   bottom: 0,
   left: 0,
 };
 
-export default Button;
+export { PrimaryButton, SmallButton };

@@ -3,13 +3,12 @@ import styled from "styled-components";
 
 import Section from "../globals/Section";
 import Title from "../globals/Title";
-import Button from "../globals/Button";
+import { PrimaryButton } from "../globals/Button";
 
 import aboutImg from "../../images/aboutBcg.jpeg";
 import {
   setRem,
   setBorder,
-  setCollor,
   setLetterSpacing,
   media,
   setColor,
@@ -36,18 +35,8 @@ const About = () => {
               et ipsum. Eu quis ut deserunt eiusmod nisi sunt incididunt nisi in
               esse sint reprehenderit ipsum. Magna dolor officia ex adipisicing.
               Sunt laboris duis exercitation ut Lorem sit cupidatat ad.
-              Exercitation quis cillum est sint magna sunt incididunt
-              consectetur proident ea reprehenderit. Cillum consectetur
-              exercitation quis quis mollit dolore do reprehenderit proident
-              sint. Sunt ad id aliquip occaecat cupidatat enim nulla
-              exercitation deserunt ex labore. Ipsum labore non nulla et aute
-              sit ad mollit culpa ea quis. Deserunt culpa ea laboris ut ullamco
-              enim id labore sit pariatur. Enim Lorem adipisicing nostrud aliqua
-              et ipsum. Eu quis ut deserunt eiusmod nisi sunt incididunt nisi in
-              esse sint reprehenderit ipsum. Magna dolor officia ex adipisicing.
-              Sunt laboris duis exercitation ut Lorem sit cupidatat ad.
             </p>
-            <Button>read more</Button>
+            <PrimaryButton>read more</PrimaryButton>
           </div>
         </AboutCenter>
       </Section>
@@ -78,13 +67,9 @@ const AboutCenter = styled.div`
   ${media.desktop`
     max-width: 100vw;
     display: grid;
-    gap: 20px;
     gap: ${setRem(32)};
     grid-template-columns: repeat(2, 1fr);
     
-    .about-img {
-      align-self: center;
-    }
     .about-info {
       margin: 0;
       p {

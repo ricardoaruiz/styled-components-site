@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { setRem, setFont, setLetterSpacing } from "../../styles";
 
 const Title = (props) => {
-  const { className, title, center } = props;
+  const { className, title } = props;
   return <h3 className={className}>{title}</h3>;
 };
 

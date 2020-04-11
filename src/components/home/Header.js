@@ -3,7 +3,7 @@ import Hero from "../globals/Hero";
 import Banner from "../globals/Banner";
 
 import homeImg from "../../images/homeBcg.jpeg";
-import Button from "../globals/Button";
+import { PrimaryButton } from "../globals/Button";
 
 const Header = () => {
   return (
@@ -16,10 +16,10 @@ const Header = () => {
         Tempor et officia ipsum excepteur sunt sunt nulla veniam fugiat aliqua 
         mollit nulla laborum quis."
       >
-        <Button top={20}>view details</Button>
-        {/* <Button as="href" href="http://www.google.com" top={20}>
+        <PrimaryButton top={20}>view details</PrimaryButton>
+        {/* <PrimaryButton as="href" href="http://www.google.com" top={20}>
           view google
-        </Button> */}
+        </PrimaryButton> */}
       </Banner>
     </Hero>
   );
