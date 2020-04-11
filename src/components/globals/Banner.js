@@ -9,6 +9,27 @@ import {
   setBorder,
 } from "../../styles";
 
+const fadeIn = (start, point, end) => {
+  const animation = keyframes`
+    0% {
+      opacit: 0;
+      transform: translateY(${start});
+    }
+    50% {
+      opacit: 0.5;
+      transform: translateY(${point});
+    }
+    100% {
+      opacit: 1;
+      transform: translateY(${end});
+    }
+  `;
+
+  return css`
+    animation: ${animation} 3s ease-in-out;
+  `;
+};
+
 const Banner = (props) => {
   const { className, greeting, title, text, children } = props;
 
@@ -59,10 +80,10 @@ const BannerWrapper = styled(Banner)`
   `}
 
   h1 {
-    /* animation */
+    ${fadeIn("100%", "-20%", "0%")};
   }
   .info {
-    /* animation */
+    ${fadeIn("-100%", "20%", "0%")};
   }
 `;
 
