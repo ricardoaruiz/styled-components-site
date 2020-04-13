@@ -37,7 +37,6 @@ const RoomsCenter = styled.div`
   ${media.desktop` 
     width: 100%;
     padding: 0 ${setRem(50)};
-    /* grid-template-columns: repeat(3, 1fr); */
   `};
 `;
 
