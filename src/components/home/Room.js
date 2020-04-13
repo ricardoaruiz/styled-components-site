@@ -7,6 +7,7 @@ import {
   setBackground,
   setBorder,
   setTransition,
+  setLetterSpacing,
 } from "../../styles";
 
 import { SmallButton } from "../globals/Button";
@@ -51,8 +52,9 @@ const StyledRoom = styled(Room)`
       position: absolute;
       top: 0;
       left: 0;
-      right: 0;
       bottom: 0;
+      width: 100%;
+
       visibility: hidden;
 
       ${setBackground({ color: "rgba(0, 0, 0, 0.2)" })};
@@ -71,6 +73,7 @@ const StyledRoom = styled(Room)`
     text-transform: capitalize;
     margin-top: ${setRem(20)};
     padding: 0 ${setRem(10)};
+    ${setLetterSpacing(3)};
   }
 
   .room-content {

@@ -31,13 +31,13 @@ const RoomsCenter = styled.div`
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: ${setRem(30)};
 
   ${media.desktop` 
     width: 100%;
     padding: 0 ${setRem(50)};
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
   `};
 `;
 
